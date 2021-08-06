@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ducpym-s!f3zmo6p*$de55jhzfw2ljy0j9m4(#lg(+-om4_wcv
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'jlewis2809.pythonanywhere.com',
+    'jlewis.pythonanywhere.com',
     "127.0.0.1",
     "localhost:8000",
 ]
