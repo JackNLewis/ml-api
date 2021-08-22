@@ -7,11 +7,10 @@ import os
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete= models.CASCADE,related_name='blog_posts')
     updated_on = models.DateTimeField(auto_now= True)
-    description = models.TextField()
-    content = models.TextField()
+    catagory = models.CharField(max_length=2, choices=[("AI","Artificial Intelligence"),("WB","Web Development")], default="WB")
+    description = models.TextField(max_length=255)
     image_dir = "images/milky-way.jpeg"
     image = models.ImageField(upload_to ='images/', default=image_dir)
     created_on = models.DateTimeField(auto_now_add=True)
