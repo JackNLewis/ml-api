@@ -144,6 +144,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 2,
+    'DEFAULT_PAGINATION_CLASS': 'blog.pagination.CustomPagination',
+    'PAGE_SIZE': 4,
 }
